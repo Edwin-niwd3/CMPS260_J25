@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam Ban Checker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script defer src="testing.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Steam Ban Checker</h1>
+        <div class="search-container">
+            <input type="text" id="steamIdInput" placeholder="Enter Steam ID to search...">
+            <input type = "button" class = "button" value = "button" id = "fetchUserDetails">
+        </div>
+        <div class="tables-container">
+            <div class="table-section">
+                <h2>Account Details</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>User Details</th>
+                            <th>Ban Status</th>
+                            <th>Groups</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <table id="userDetails"></table>
+                            </td>
+                            <td>
+                                <table id="banStatus"></table>
+                            </td>
+                            <td>
+                                <table id="groupsList"></table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
